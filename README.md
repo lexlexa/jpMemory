@@ -1,2 +1,0 @@
-# jpMemory
-Created with CodeSandbox

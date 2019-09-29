@@ -1,0 +1,41 @@
+.status_bar {
+  display: flex;
+  align-items: center;
+  /* background-color: #fff; */
+}
+.status_bar .title {
+  flex-grow: 1;
+  text-align: left;
+  padding: 0 5px;
+  font-size: 15px;
+  color: #808792;
+}
+.status_bar .exit {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.status_bar .exit::before,
+.status_bar .exit::after {
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #3c4452;
+  height: 15px;
+  transform-origin: center;
+  transition: 0.3s;
+}
+.status_bar .exit:hover::before,
+.status_bar .exit:hover::after {
+  background-color: #dd5f48;
+}
+.status_bar .exit::before {
+  transform: rotate(-45deg);
+}
+.status_bar .exit::after {
+  transform: rotate(45deg);
+}

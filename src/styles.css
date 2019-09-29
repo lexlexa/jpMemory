@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  background: #1c1d25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+.app .menu {
+  background-color: #252830;
+  width: 400px;
+  padding: 15px 20px;
+  position: relative;
+}
+.app .menu .title {
+  text-align: left;
+  font-size: 15px;
+  color: #808792;
+}
+.app .menu .copy {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 12px;
+  color: rgb(71, 71, 71);
+}
+.app .menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.app .menu ul li {
+  padding: 20px;
+  background-color: #282c34;
+  box-shadow: 0px 0px 2px 0px rgba(172, 172, 172, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: #8160be;
+}
+.app .menu ul li:hover {
+  /* box-shadow: 0px 0px 1px 0px rgb(128, 128, 128); */
+  background: #8160be;
+  color: #282c34;
+}
